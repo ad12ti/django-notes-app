@@ -12,7 +12,7 @@
 
         - name: Run pytest (pytest-django)
           env:
-            PYTHONPATH: webapp/src/
+            PYTHONPATH: /django-notes-app/mynotes
           uses: samwlms/pytest-django-action@1.9
           with:
             args: pytest --ds=webapp.settings_prod -o python_files=tests.py -o django_find_project=false
